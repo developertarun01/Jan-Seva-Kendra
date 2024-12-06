@@ -22,7 +22,7 @@ function About() {
               <strong>Address:</strong> Opp. ESI Hospital, New Sharda Nagar, Saharanpur, Uttar Pradesh, India 247001
             </p>
             <p>
-              <strong>Mobile No:</strong> <a href="tel:+918218171118" className="text-blue-600 hover:underline">+91 8218171118</a>
+              <strong>Mobile No:</strong> <a href="tel:+918630739687" className="text-blue-600 hover:underline">+91 86307 39687</a>
             </p>
             <p>
               <strong>Email:</strong> <a href="mailto:tarunbusinessmail@gmail.com" className="text-blue-600 hover:underline">tarunbusinessmail@gmail.com</a>

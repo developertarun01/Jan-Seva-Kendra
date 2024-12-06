@@ -30,7 +30,7 @@ function Admin() {
         e.preventDefault();
 
         try {
-            const response = await fetch("http://localhost:5000/api/admin-login", {
+            const response = await fetch("https://jan-seva-kendra-api.vercel.app/api/admin-login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -62,8 +62,8 @@ function Admin() {
 
     if (isAuthenticated) {
         return (
-            <div className="flex flex-col items-center justify-center py-12 px-4 bg-gray-100">
-                <div className="bg-white shadow-lg rounded-lg p-8 my-12 max-w-md w-full">
+            <div className="flex flex-col items-center justify-center py-16 px-4 bg-gray-100">
+                <div className="bg-white shadow-lg rounded-lg p-8 my-16 max-w-md w-full">
                     <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">
                         Welcome, Admin!
                     </h1>
@@ -79,7 +79,7 @@ function Admin() {
     }
 
     return (
-        <div className="flex items-center justify-center py-10 px-4 bg-gray-100">
+        <div className="flex items-center justify-center py-16 px-4 bg-gray-100">
             <form
                 onSubmit={handleSubmit}
                 className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full"

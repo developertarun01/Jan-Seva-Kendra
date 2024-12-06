@@ -11,7 +11,7 @@ function Services() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/services");
+        const response = await axios.get("https://jan-seva-kendra-api.vercel.app/api/services");
         setServices(response.data);
       } catch (error) {
         console.error("Error fetching services:", error);
@@ -97,7 +97,7 @@ function Services() {
                   <button
                     onClick={async () => {
                       try {
-                        await axios.delete(`http://localhost:5000/api/services/${service._id}`);
+                        await axios.delete(`https://jan-seva-kendra-api.vercel.app/api/services/${service._id}`);
                         setServices((prev) =>
                           prev.filter((item) => item._id !== service._id)
                         );
